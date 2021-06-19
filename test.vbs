@@ -2,7 +2,10 @@ Dim cn, ExcelPath
 
 ExcelPath = "C:\Users\t_nii\Documents\git\activex\ts-node-excel-sql\sample-data.xlsx"
 Set cn = CreateObject("ADODB.Connection")
-cn.Open "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" & ExcelPath & ";Extended properties=""Excel 12.0;HDR=YES;"""
+constr = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" & ExcelPath & ";Extended properties=""Excel 12.0;HDR=YES;"""
+WScript.Echo constr
+
+cn.Open constr
 
 Set cmd = CreateObject("ADODB.Command")
 cmd.ActiveConnection = cn
