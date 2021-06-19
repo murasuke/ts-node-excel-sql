@@ -1,5 +1,4 @@
-# node.js上で、SQLを使いExcelファイルを更新する(TypeScript)
-
+# TypeScriptでSQLを使いExcelファイルを更新するサンプル
 ソースコード：
 https://github.com/murasuke/ts-node-excel-sql
 ## 前書き
